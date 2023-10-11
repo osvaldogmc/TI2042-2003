@@ -2,87 +2,263 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgImagen"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageView
+        android:id="@+id/imageBg"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="44dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/titleLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/top_background"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/perfilApp"
+        android:layout_width="162dp"
+        android:layout_height="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLabel"
+        app:srcCompat="@drawable/perfil"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/labelBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="¡Bienvenido!"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Nombre"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="210dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="email@email.cl"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="284dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="**********"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="370dp" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Fecha de nacimiento"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="450dp" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#DD0808"
-        android:backgroundTint="#D80909"
-        android:backgroundTintMode="add"
-        android:text="Crear una cuenta"
-        app:iconTint="#F30606"
-        app:rippleColor="#F60707"
-        app:strokeColor="#E40404"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="550dp" />
+        app:layout_constraintTop_toBottomOf="@+id/perfilApp"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/labelName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crea una cuenta"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="89dp" />
+        android:layout_marginTop="12dp"
+        android:text="Daniel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelBienvenido"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/EngranajeAPP"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/labelName"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/engranaje2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/menuBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/perfilApp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/labelChat"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="316dp"
+        android:text="Chatear"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="44dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/labelChat"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelCompInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="260dp"
+        android:text="Compartir Info"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="44dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/labelCompInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/labelForo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:text="Foro"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="44dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/labelForo"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_month"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/labelAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="Actividades"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imgCircle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelCompInfo"
+        app:srcCompat="@drawable/circulo"
+        tools:ignore="ContentDescription,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgCircle2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/labelName"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EngranajeAPP"
+        app:srcCompat="@drawable/circulo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgCircle3"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="230dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgCircle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelChat"
+        app:srcCompat="@drawable/circulo"
+        tools:ignore="ContentDescription,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/imgCircle4"
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgCircle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circulo"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imgCircle5"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgCircle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circulo"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
