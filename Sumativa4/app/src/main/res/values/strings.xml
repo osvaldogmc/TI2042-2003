@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppMQTT</string>
+    <string name="titleText" />
+    <string name="greentext" />
+    <string name="yellowtext" />
+    <string name="redtext" />
+    <string name="btntext" />
+    <string name="btntext2" />
+    <string name="btntext3" />
+</resources>
